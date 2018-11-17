@@ -48,7 +48,7 @@ int main (int argc, char* argv[])
         for (int j = 0; j < input_height; j+=block_width){
             for (int k = 0; k < i + block_width; ++k){
                 for (int l = 0; l < j + block_width; ++l){
-                    output_matrix[k+l*input_width] = input_matrix[l+k*input_width];
+                    output_matrix[k+l*input_height] = input_matrix[l+k*input_height];
                 }
             }
         }
